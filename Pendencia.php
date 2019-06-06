@@ -79,13 +79,18 @@ class Pendencia extends Dao{
             return true;
         }
     }  
-    
-    public function insere($protocolo){
-        $sql = "update protocolo_pa set idato = 11, data_visita = CURDATE() where numero = :numero";
+  public function insere($protocolo){
+          $sql = "update protocolo_pa set idato = 11, data_visita = CURDATE() where numero = :numero";
         $query = $this->con->prepare($sql);
         $r = $query->execute(['numero' => $protocolo['numero']]);
         
         if($r){
+            $sql = "INSERT INTO protocolo(numero, idato,  data_visita) "
+                . " VALUES(:numero, 11, CURDATE())";
+            $query = $this->con->prepare($sql);
+           
+            $r = $query->execute($protocolo);
+        
             return true;
         }else{
             echo "Erro ao inserir novo protocolo";
