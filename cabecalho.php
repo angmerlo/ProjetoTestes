@@ -53,9 +53,9 @@
             <img  width="250" height="50" src='arquivos/cartorio.jpg' ALIGN="right"/>
           <ul class="nav navbar-nav">
                 <li class="active"><a href="index.php">Home</a></li>
-                <li class="active"><a href="crudIntima.php?acao=novo">Intima</a></li> 
-                <li class="active"><a href="crudOcorrencia.php?acao=novo">Ocorrencia</a></li> 
-                <li class="active"><a href="crudPendencia.php?acao=novo">Pendencia</a></li> 
+                <li class="active"><a href="crudIntima.php?acao=novo">Intima Protocolo</a></li> 
+                <li class="active"><a href="crudOcorrencia.php?acao=novo">Registra Ocorrência</a></li> 
+                <li class="active"><a href="crudPendencia.php?acao=novo">Devolver Protocolo</a></li> 
                 
             </ul>
           <ul class="nav navbar-nav navbar-right">
