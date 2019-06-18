@@ -44,7 +44,7 @@ if($acao == "index"){
       }else if($acao == "novo"){
     $listaOcorrencias = $daoOcorrencia->buscarOcorrencias();
     require './cabecalho.php';
-    require './erros.php';
     require './formOcorrencia.php';
     require './rodape.php';
+    require './erros.php';
 } 
